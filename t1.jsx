@@ -418,5 +418,5 @@ promise.all(
       });
   })
 ).then((result) => {
-  fs.writeFileSync(`./t1/${Date.now()}.json`, JSON.stringify(result, null, 4));
+  fs.writeFileSync(`${__dirname}/t1/${Date.now()}.json`, JSON.stringify(result, null, 4));
 });

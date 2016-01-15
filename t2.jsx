@@ -76,5 +76,5 @@ promise.all(
       });
   })
 ).then((result) => {
-  fs.writeFileSync(`./t2/${Date.now()}.json`, JSON.stringify(result, null, 4));
+  fs.writeFileSync(`${__dirname}/t2/${Date.now()}.json`, JSON.stringify(result, null, 4));
 });
